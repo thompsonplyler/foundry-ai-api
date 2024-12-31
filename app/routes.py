@@ -1,5 +1,4 @@
-from app import app
-
-@app.route('/')
-def index():
-    return "Hello, world!"
+def register_routes(app):
+    @app.route('/')
+    def index():
+        return "Hello, world!"
